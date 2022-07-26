@@ -1,6 +1,9 @@
 # py-Convert-GeneralTBX-TBXBasic
 Python port of p5-Convert-GeneralTBX-TBXBasic
 
+## Download this repository
+Do this but either cloning via got, or cocking on the "clone" button above and downloading as a zip archive.
+
 ## Preparing your environment
 ### Install Python
 [Python 3.9.13](https://www.python.org/downloads/release/python-3913/) was the most recent version of Python this was tested with, but it was also working in older versions of Python 3.
