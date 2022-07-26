@@ -2,7 +2,7 @@
 Python port of p5-Convert-GeneralTBX-TBXBasic
 
 ## Download this repository
-Download this repository by either cloning via got, or cocking on the "clone" button above and downloading as a zip archive.
+Download this repository by either cloning via git, or clicking on the "clone" button above and downloading as a zip archive.
 
 ## Preparing your environment
 ### Install Python
