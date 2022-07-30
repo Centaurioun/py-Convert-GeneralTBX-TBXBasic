@@ -506,9 +506,9 @@ if not os.path.exists(filename):
     print("Selected file was not found. Please try again.")
     exit(1)
 
-# TODO: Check if all input files are expected to be TBX or if this code needs to be more flexible
-outfilename = filename.replace('.tbx', "Steamroller.tbx")
-
+# outfilename = filename.replace('.tbx', "Steamroller.tbx")
+outfilename = os.path.splitext(filename)[0] + "_converted.tbx"
+print(outfilename)
 # TODO: Append steamroller to file name, pass in as parameter for parser
 outfile = codecs.open(outfilename, 'w', encoding='UTF-8')
 
