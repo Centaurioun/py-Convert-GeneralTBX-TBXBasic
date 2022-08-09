@@ -445,13 +445,11 @@ class TBXHandler(sax.ContentHandler):
     def endElement(self, name):
         if self.notecreated is True:
             name = "note"
+            self.termnotestring += f"</{name}>"
             self.notecreated = False
-
-        if name != "xref":
+        elif name != "xref":
             if self.parsingterm is True:
-                if name == "note":
-                    self.termnotestring += f"</{name}>"
-                elif name == "termSec":
+                if name == "termSec":
                     print(f"termSec ends on line# {self.linecount}")
                     self.parsingterm = False
                     self.outfile.write(self.termnotestring)
